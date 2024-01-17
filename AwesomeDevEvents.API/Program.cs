@@ -1,5 +1,6 @@
 using AwesomeDevEvents.API.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,24 @@ builder.Services.AddDbContext<DevEventsDbContext>(o => o.UseSqlServer(connection
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "DevEvents.API",
+        Version = "V1",
+        Contact = new OpenApiContact
+        {
+            Name = "Matheus Coutinho",
+            Email = "matheuscnc4@gmail.com",
+            Url = new Uri("https://www.linkedin.com/in/matheus-coutinho-121674214/")
+        }
+    });
+
+    var xmlFile = "AwesomeDevEvents.API.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
+});
 
 var app = builder.Build();
 
