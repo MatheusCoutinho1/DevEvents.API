@@ -77,3 +77,5 @@ C:\Users\Matheus\Desktop\AwesomeDevEvents\AwesomeDevEvents.API\bin\Debug\net7.0\
 C:\Users\Matheus\Desktop\AwesomeDevEvents\AwesomeDevEvents.API\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Matheus\Desktop\AwesomeDevEvents\AwesomeDevEvents.API\bin\Debug\net7.0\AwesomeDevEvents.API.xml
 C:\Users\Matheus\Desktop\AwesomeDevEvents\AwesomeDevEvents.API\obj\Debug\net7.0\AwesomeDevEvents.API.xml
+C:\Users\Matheus\Desktop\AwesomeDevEvents\AwesomeDevEvents.API\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Matheus\Desktop\AwesomeDevEvents\AwesomeDevEvents.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

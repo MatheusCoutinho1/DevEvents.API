@@ -20,14 +20,14 @@
             <response code="200">Sucesso</response>
             <response code="404">Não encontrado</response>
         </member>
-        <member name="M:AwesomeDevEvents.API.Controllers.DevEventsController.Post(AwesomeDevEvents.API.Entities.DevEvent)">
+        <member name="M:AwesomeDevEvents.API.Controllers.DevEventsController.Post(AwesomeDevEvents.API.Models.DevEventInputModel)">
             <summary>
             Cadastrar um evento
             </summary>
             <remarks>
             {"title": "string","description": "string","startDate": "2024-01-17T01:25:19.176Z","endDate": "2024-01-17T01:25:19.176Z"}
             </remarks>
-            <param name="devEvent">Dados do evento</param>
+            <param name="input">Dados do evento</param>
             <returns>Objeto recém criado</returns>
             <response code="201">Sucesso</response>
         </member>
@@ -53,7 +53,7 @@
             <response code="404">Não encontrado</response>
             <response code="204">Sucesso</response>
         </member>
-        <member name="M:AwesomeDevEvents.API.Controllers.DevEventsController.PostSpeaker(System.Guid,AwesomeDevEvents.API.Entities.DevEventSpeaker)">
+        <member name="M:AwesomeDevEvents.API.Controllers.DevEventsController.PostSpeaker(System.Guid,AwesomeDevEvents.API.Models.DevEventSpeakerInputModel)">
             <summary>
             Cadastrar um palestrante
             </summary>
@@ -61,7 +61,7 @@
             {"name": "string","talkTitle": "string","talkDescription": "string","linkedInProfile": "string"}
             </remarks>
             <param name="id">Identificador do evento</param>
-            <param name="speaker">Dados do palestrante</param>
+            <param name="input">Dados do palestrante</param>
             <returns>Nada.</returns>
             <response code="204">Sucesso</response>
             <response code="404">Evento não encontrado</response>
